@@ -27,14 +27,11 @@ public class TheaterReservations {
 
         String firstName = fullName.substring(0,firstSpace);
         String lastName = fullName.substring(firstSpace + 1);
+        input.close();
 
         if(ticket > 1){
             System.out.printf("%d tickets reserved for %s under %s, %s", ticket,date,lastName,firstName);}
                 else{
             System.out.printf("%d ticket reserved for %s under %s, %s", ticket,date,lastName,firstName);;}
-
-
     }
-
-
 }
